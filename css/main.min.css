@@ -1,0 +1,2 @@
+body{background-color:aqua}:root{--accent-color: #FF6B0A;--text-main: #1B1D1F;--text-second: #FFFFFF;--theme-bg: #FFFFFF;--theme-imput-border: #005BBB;--typical-transition-duration: 250ms;--typical-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)}body{font-family:'Roboto', sans-serif;color:var(--text-main);font-style:normal;letter-spacing:0.03em}h1,h2,h3,p{margin:0}ul{list-style-type:none;margin:0;padding:0}.link{color:inherit;text-decoration:none}.img{display:block;width:100%;height:auto}.container{margin:0 auto;width:1170px}
+/*# sourceMappingURL=main.min.css.map */

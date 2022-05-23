@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,IAAI;CACzB;;ACFD,AAAA,KAAK,CAAC;EACF,cAAc,CAAA,QAAC;EACf,WAAW,CAAA,QAAC;EACZ,aAAa,CAAA,QAAC;EACd,UAAU,CAAA,QAAC;EACX,oBAAoB,CAAA,QAAC;EAErB,6BAA6B,CAAA,MAAC;EAC9B,oCAAoC,CAAA,6BAAC;CACxC;;AAED,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,oBAAoB;EACjC,KAAK,EAAE,gBAAgB;EACvB,UAAU,EAAE,MAAM;EAClB,cAAc,EAAE,MAAM;CACzB;;AChBD,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;CACZ;;AAED,AAAA,EAAE,CAAC;EACC,eAAe,EAAE,IAAI;EACrB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACb;;AAED,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,OAAO;EACd,eAAe,EAAE,IAAI;CACxB;;AAED,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACf;;ACtBD,AAAA,UAAU,CAAC;EACP,MAAM,EAAE,MAAM;EACd,KAAK,EAAE,MAAM;CAChB",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/_variables.scss",
+        "../sass/_reset.scss",
+        "../sass/_container.scss",
+        "../sass/_main-page.scss",
+        "../sass/_gus-facts.scss",
+        "../sass/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
