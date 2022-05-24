@@ -24,7 +24,7 @@
                         <h3 class="hero__header">На старт. Увага. Полетіли!</h3>
                         <h1 class="hero__title">Бандерогусь</h1>
                         <p class="hero__text">Спеціальний бойовий гусак із біолабораторій України. Пишаюся своїми подвигами, бороню Батьківщину та підтримую позитивний дух народу. Слава Україні!</p>
-                        <button type="button" class="hero__btn btn">Запустити гуся</button>
+                        <button type="button" class="hero__btn btn" id="open-form-modal-btn">Запустити гуся</button>
                     </div>
                     <img src="./images/gus.svg" alt="Бандерогусь" class="hero__img">
             </section>
@@ -67,29 +67,40 @@
             <p class="footer__text">Головна мета бандерогусей — служити гумору та доброті нашого народу. Ми забезпечимо вашу посмішку у часи, коли вона так необхідна</p>
         </div>
     </footer>
-    <div class="modal-backdrob">
+    <div class="modal-backdrob" id="form-modal">
         <div class="modal">
-            <button class="modal__close-icon">
+            <button class="modal__close-btn">
+                <svg width="24" height="24"><path d="M5.152 5.152a1.2 1.2 0 0 1 1.696 0L12 10.303l5.152-5.151a1.2 1.2 0 1 1 1.696 1.696L13.697 12l5.151 5.152a1.2 1.2 0 0 1-1.696 1.696L12 13.697l-5.152 5.151a1.2 1.2 0 0 1-1.696-1.696L10.303 12 5.152 6.848a1.2 1.2 0 0 1 0-1.696Z"/></svg>
+            </button>
+            <form action="#" autocomplete="off" id="form" method="post">
+                <input type="hidden" name="form-name" value="form">
+                <img src="./images/tryzub.svg" alt="тризуб" class="modal__tryzub">
+                <p class="modal__title">Поділися, будь ласка, поштою</p>
+                <p class="modal__text">та запиши гуся до бандерозагону</p>
+                <div class="modal__form">
+                    <div class="modal__field">
+                        <label for="user-name" class="modal__label">Ім’я</label>
+                        <input type="text" name="name" id="user-name" class="modal__input">
+                    </div>
+                    <div class="modal__field">
+                        <label for="user-email" class="modal__label">Email</label>
+                        <input type="email" name="mail" id="user-email" class="modal__input">
+                    </div>
+                </div>
+            <button type="submit" class="modal__btn btn" id="launch-btn">Запустити гуся</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal-backdrob" id="success-modal">
+        <div class="modal">
+            <button class="modal__close-btn">
                 <svg width="24" height="24"><path d="M5.152 5.152a1.2 1.2 0 0 1 1.696 0L12 10.303l5.152-5.151a1.2 1.2 0 1 1 1.696 1.696L13.697 12l5.151 5.152a1.2 1.2 0 0 1-1.696 1.696L12 13.697l-5.152 5.151a1.2 1.2 0 0 1-1.696-1.696L10.303 12 5.152 6.848a1.2 1.2 0 0 1 0-1.696Z"/></svg>
             </button>
             <img src="./images/tryzub.svg" alt="тризуб" class="modal__tryzub">
-            <p class="modal__title">Поділися, будь ласка, поштою</p>
-            <p class="modal__text">та запиши гуся до бандерозагону</p>
-            <form class="modal__form" autocomplete="off">
-                <div class="modal__field">
-                    <label for="user-name" class="modal__label">Ім’я</label>
-                    <input type="text" name="name" id="user-name" class="modal__input">
-                </div>
-                <div class="modal__field">
-                    <label for="user-email" class="modal__label">Email</label>
-                    <input type="email" name="mail" id="user-email" class="modal__input">
-                </div>
-            </form>
-            <button type="submit" class="modal__btn btn">Запустити гуся</button>
+            <p class="modal__title">Дякуємо, гусь успішно запущений</p>
+            <p class="modal__text">Слава Україні! Героям Слава!</p>
         </div>
     </div>
-    <!-- <div class="modal-backdrob">
-        <div class="modal-success"></div>
-    </div> -->
+    <script src="./js/modal.js"></script>
 </body>
 </html>

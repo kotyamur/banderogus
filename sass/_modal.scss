@@ -8,16 +8,32 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(27, 29, 31, 0.7);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: opacity var(--typical-transition-duration) var(--typical-transition-timing-function),
+    visibility var(--typical-transition-duration) var(--typical-transition-timing-function);
+    &.modal-active {
+        pointer-events: all;
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 .modal {
     position: relative;
     min-width: 573px;
-    min-height: 516px;
+    max-height: 516px;
     padding: 32px 93px 60px;
     text-align: center;
     background-color: var(--theme-bg);
-    &__close-icon {
+    transform: scale(0.7);
+    transition: transform var(--typical-transition-duration) var(--typical-transition-timing-function);
+    .modal-backdrob.modal-active & {
+        transform: scale(1);
+    }
+
+    &__close-btn {
         position: absolute;
         top: 24px;
         right: 24px;
@@ -32,6 +48,9 @@
         outline: none;
         cursor: pointer;
         fill: var(--modal-icon);
+        transform: scale(1);
+        transition: transform var(--typical-transition-duration) var(--typical-transition-timing-function), 
+            fill var(--typical-transition-duration) var(--typical-transition-timing-function);
     
         &:hover,
         &:focus {
@@ -48,9 +67,9 @@
     }
     &__text {
         @extend %text;
-        margin-bottom: 24px;
     }
     &__form {
+        margin-top: 24px;
         margin-bottom: 40px;
     }
     &__field {
@@ -69,9 +88,18 @@
         border: 1px solid var(--theme-imput-border);
         border-radius: 8px;
         padding-left: 15px;
+        outline: none;
+        transition: border-color var(--typical-transition-duration) var(--typical-transition-timing-function);
+        &:focus-within {
+            border: 3px solid var(--accent-color);
+        }
     }
     &__btn {
         display: block;
         margin: 0 auto;
     }
 }
+
+.body-fixed {
+    overflow: hidden;
+  }
