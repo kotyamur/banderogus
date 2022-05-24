@@ -1,0 +1,22 @@
+.footer {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    text-align: center;
+    &__box {
+        padding-top: 72px;
+        padding-bottom: 72px;
+        background: linear-gradient(269.89deg, #C1E8FF 0.12%, #FFFFFF 99.93%);
+    }
+    &__tryzub {
+        margin-bottom: 16px;
+    }
+    &__title {
+        @extend %second-title;
+        margin-bottom: 16px;
+    }
+    &__text {
+        @extend %text;
+        width: 875px;
+        margin: 0 auto;
+    }
+}

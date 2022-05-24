@@ -1,0 +1,36 @@
+.gus-facts {
+    text-align: center;
+    padding-top: 52px;
+    &__tryzub {
+        margin-bottom: 16px;
+    }
+    &__title {
+        @extend %second-title;
+        margin-bottom: 16px;
+    }
+    &__text {
+        @extend %text;
+        margin: 0 auto 24px;
+        width: 875px;
+    }
+    &__list {
+        display: flex;
+    }
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+    &__img {
+        margin-bottom: 12px;
+    }
+    &__information {
+        padding: 0 47px;
+        text-align: start;
+    }
+    &__heading {
+        @extend %third-title;
+        margin-bottom: 32px;
+    }
+    &__description {
+        @extend %text;
+    }
+}

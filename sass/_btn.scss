@@ -1,0 +1,14 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 172px;
+    height: 48px;
+    border-radius: 8px;
+    @extend %text;
+    color: var(--text-second);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    border: none;
+    outline: none;
+}

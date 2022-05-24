@@ -1,19 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css">
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Banderogus</title>
 </head>
 <body>
     <section class="main-page">
-        <header class="header"></header>
-        <section class="hero"></section>
+       <div class="wrapper container">
+            <header class="header">
+                <img src="./images/logoIT.svg" alt="лого">
+                <p class="header__text">Школа підготовки IT-спеціалістів</p>
+            </header>
+            <section class="hero">
+                    <div class="hero__container">
+                        <h2 class="hero__top-text">Доброго вечора, ми з України</h2>
+                        <h3 class="hero__header">На старт. Увага. Полетіли!</h3>
+                        <h1 class="hero__title">Бандерогусь</h1>
+                        <p class="hero__text">Спеціальний бойовий гусак із біолабораторій України. Пишаюся своїми подвигами, бороню Батьківщину та підтримую позитивний дух народу. Слава Україні!</p>
+                        <button type="button" class="hero__btn btn">Запустити гуся</button>
+                    </div>
+                    <img src="./images/gus.svg" alt="Бандерогусь" class="hero__img">
+            </section>
+       </div>
     </section>
-    <section class="gus-facts"></section>
-    <footer class="footer"></footer>
+    <section class="gus-facts">
+        <div class="container">
+            <img src="./images/tryzub.svg" alt="тризуб" class="gus-facts__tryzub">
+        <h2 class="gus-facts__title">Цікаві факти про бандерогусей</h2>
+        <p class="gus-facts__text">Зазвичай бандерогуси — виключно мирні птахи. Але у разі небезпеки можуть атакувати ворога системою надпотужного озброєння. Також нищать психологічно, активуючи високочастотне шипіння та розмахування крилами</p>
+        <ul class="gus-facts__list list">
+            <li class="gus-facts__item">
+                <img src="./images/gus1.svg" alt="бандерогус з системою GPS навігації" class="gus-facts__img">
+                <div class="gus-facts__information">
+                    <h3 class="gus-facts__heading">Система навігації</h3>
+                    <p class="gus-facts__description">Супутниковий GPS та ехолокатори розпізнають ворожу техніку навіть на етапі збірки</p>
+                </div>
+            </li>
+            <li class="gus-facts__item">
+                <img src="./images/gus2.svg" alt="бандерогус з очима-тепловізорами" class="gus-facts__img">
+                <div class="gus-facts__information">
+                    <h3 class="gus-facts__heading">Очі-тепловізори</h3>
+                    <p class="gus-facts__description">Допомагають виявити характер сигнатури об’єктів та значно підвищують точність удару</p>
+                </div>
+            </li>
+            <li class="gus-facts__item">
+                <img src="./images/gus3.svg" alt="бандерогус з байракрилами" class="gus-facts__img">
+                <div class="gus-facts__information">
+                    <h3 class="gus-facts__heading">Байракрила</h3>
+                    <p class="gus-facts__description">Можуть нести 2-4 керовані ракети, що вражають ціль на відстані «ніхріна собі» кілометрів</p>
+                </div>
+            </li>
+        </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer__box">
+            <img src="./images/tryzub.svg" alt="тризуб" class="footer__tryzub">
+            <h2 class="footer__title">Перемога завжди за нами!</h2>
+            <p class="footer__text">Головна мета бандерогусей — служити гумору та доброті нашого народу. Ми забезпечимо вашу посмішку у часи, коли вона так необхідна</p>
+        </div>
+    </footer>
+    <div class="modal-backdrob">
+        <div class="modal">
+            <button class="modal__close-icon">
+                <svg width="24" height="24"><path d="M5.152 5.152a1.2 1.2 0 0 1 1.696 0L12 10.303l5.152-5.151a1.2 1.2 0 1 1 1.696 1.696L13.697 12l5.151 5.152a1.2 1.2 0 0 1-1.696 1.696L12 13.697l-5.152 5.151a1.2 1.2 0 0 1-1.696-1.696L10.303 12 5.152 6.848a1.2 1.2 0 0 1 0-1.696Z"/></svg>
+            </button>
+            <img src="./images/tryzub.svg" alt="тризуб" class="modal__tryzub">
+            <p class="modal__title">Поділися, будь ласка, поштою</p>
+            <p class="modal__text">та запиши гуся до бандерозагону</p>
+            <form class="modal__form" autocomplete="off">
+                <div class="modal__field">
+                    <label for="user-name" class="modal__label">Ім’я</label>
+                    <input type="text" name="name" id="user-name" class="modal__input">
+                </div>
+                <div class="modal__field">
+                    <label for="user-email" class="modal__label">Email</label>
+                    <input type="email" name="mail" id="user-email" class="modal__input">
+                </div>
+            </form>
+            <button type="submit" class="modal__btn btn">Запустити гуся</button>
+        </div>
+    </div>
+    <!-- <div class="modal-backdrob">
+        <div class="modal-success"></div>
+    </div> -->
 </body>
 </html>

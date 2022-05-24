@@ -1,9 +1,9 @@
-body {
-    background-color: aqua;
-}
 @import "./variables";
 @import "./reset";
+@import "./placeholders";
 @import "./container";
+@import "./btn";
 @import "./main-page";
 @import "./gus-facts";
 @import "./footer";
+@import "./modal";
